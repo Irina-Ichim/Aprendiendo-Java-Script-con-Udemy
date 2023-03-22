@@ -13,8 +13,155 @@ console.log('Hola, Mundo')
 //var_evita utilizarla
 
 let miPrimeraVariable = "Mi primera variable" // mi variable let es un string. Let es una palabra reservada por js
-console.log(miPrimeraVariable); // Si queremos llamar la variable, en console no ponemos comillas, si las ponemos js piensa que llamamos al string.
+//console.log(miPrimeraVariable); // Si queremos llamar la variable, en console no ponemos comillas, si las ponemos js piensa que llamamos al string.
 
 //Reasignando valor a la variable:
-miPrimeraVariable = 'esto ha cambiado' //Mi primera variable ha cambiado a un string, le hemos reasignado un valor
-console.log(miPrimeraVariable);
+miPrimeraVariable = 'esto ha cambiado' //Mi primera variable ha cambiado a un string, le hemos reasignado un valor.Esto se llama mutabilidad.
+//console.log(miPrimeraVariable);
+
+//Los booleans solo tienen valor true o false
+
+let miprimerBoolean = true
+let miSegundoBool = false
+
+//Numbers. Las variables siempre empiezan por letras, importante hacer buena practica y el nombre de la variable debe estar acuerdo a lo que contiene
+
+let miPrimerNumero = 0
+let miNumero1 = 12
+let miNumero2 = -258
+
+console.log(miPrimeraVariable, miprimerBoolean, miPrimerNumero, miNumero2, miNumero1);
+
+//UNDEFINED_si no le asignas valor a la variable, osea no le pones =
+
+//let undef
+//console.log(undef);
+
+let nulo = null //Tiene asignado un valor nulo
+
+//console.log(nulo);
+
+//Null y undefined se comportan similar y siempre evaluan en falso
+
+//console.log('nulo', 33, true, undef)
+
+//OBJETO_agrupacion de datos
+
+const miPrimerObjeto = {}//objeto vacio porque entre {} no contiene datos
+//Los objetos tienen propriedades, no variables.
+//Recuerda escribirla correctamente con , y :(mira el ejemplo)
+//Si queremos imprimir solo parte del objeto recuerda utilizar "."(punto)
+
+const miObjeto = {
+    unNumero: 12,
+    unString: 'Cadena de caracteres',
+    unaCondicion: true, 
+
+}
+console.log(miObjeto);
+console.log(miObjeto.unString);
+
+//ARRAY
+const arrVacio = []  //array vacio
+const arr = [1, 2, 'Hola', 'miObjeto']
+console.log(arrVacio, arr);
+arr.push(5) //push agrega un elemento; si quieres agregar mas de un elemento hay que ir push por push
+arrVacio.push(miPrimeraVariable);
+//console.log(arr);
+//console.log(miPrimeraVariable);
+
+
+//Operaciones matematicas en js
+
+const suma = 2 + 1
+const resta = 5 - 3
+const multiplicar = 2 * 3
+const dividir = 6 / 2
+
+//console.log ( suma, resta, multiplicar, dividir,);
+
+
+//Modulo significa que me toma los dos valores, hace la operacion indicada y retorna el valor que sobra
+//Para modulo se usa %
+
+const modulo = 10 % 3
+//console.log(modulo);
+
+//Incrementar y decrementar numeros com ++ y --
+//El valor de una constante no se puede cambiar
+//let numero = 5
+//numero++
+//numero++
+//numero++
+//numero++
+//numero++
+
+//numero--
+//numero--
+//numero--
+//console.log(numero);
+
+//Operadores de asignacion_ asignamos en cuanto le queremos incrementar += ,decrementar -= , multoplicar *=, dividir /=, (mira el ejemplo de abajo)
+let numero = 5
+numero += 5
+numero -= 5
+numero *= 5
+numero /= 5
+//console.log(numero);
+
+//Operadores de comparacion
+//igualdad estricta
+const resultado1 = 5 === 6
+//igualdad no estricta
+const resultado2 = 5 == '5'
+//console.log(resultado1);
+console.log(resultado2);
+//Comparacion de menor y mayor
+
+const resultado3 = 5 < 6
+const resultado4 = 5 > 6
+console.log(resultado3, resultado4);
+
+// Comparacion menor igual <= o mayor >= es lo mismo que en ejemplo anterior
+// Comparacion completamente desigual !== y != no es completamente desigual
+
+//Operadores Logicos or, and y not
+//or || evalua el primer valor que retorne true, le podemos encadenar varios or
+//Con el or || los strings, objetos y numeros evaluan en positivo(true) y corta la cadena, a excepcion de numero 0 que evalua como false
+const resultadoOr1 ='Hola' || false || true|| false|| true 
+const resultadoOr = true || false
+//console.log(resultadoOr1);
+
+// and &&  nos retorna el primer false que encuentre, si no lo encuentra nos devuelve true, igual se le puede encadenar varias veces el and &&
+// En caso de tener funciones que devuelvan el valor de true o false y que ademas hagan otras cosas si se van a ejecutar y si cortan la cadena
+const resultandoAnd = true && true && false
+//console.log(resultandoAnd);
+
+//not ! nos devuelve el valor inverso, retorna el valor opuesto a lo que le indicamos
+
+const resultadoNot = !true 
+//console.log(resultadoNot);
+
+//CONTROL DE FLUJO
+
+//if(){} y else{}
+// A mi entender, al if le pongo las condiciones que necesito dentro de (), al else le pongo un consolelog por si no cumplen las condiciones
+
+const edad = 5
+if (edad > 5 && edad < 16) {
+    console.log('El niño puede jugar');
+
+}else{
+    console.log('El niño no puede jugar :(');
+}
+
+//while
+
+
+
+
+
+
+
+
+
