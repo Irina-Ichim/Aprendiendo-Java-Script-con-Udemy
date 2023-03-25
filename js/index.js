@@ -156,6 +156,7 @@ if (edad > 5 && edad < 16) {
 }
 
 //while
+console.log(hola);
 
 
 
