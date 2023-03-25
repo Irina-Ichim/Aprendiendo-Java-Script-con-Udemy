@@ -142,21 +142,28 @@ const resultandoAnd = true && true && false
 const resultadoNot = !true 
 //console.log(resultadoNot);
 
-//CONTROL DE FLUJO
+//CONTROL DE FLUJO if y else
 
 //if(){} y else{}
 // A mi entender, al if le pongo las condiciones que necesito dentro de (), al else le pongo un consolelog por si no cumplen las condiciones
 
-const edad = 5
-if (edad > 5 && edad < 16) {
-    console.log('El niño puede jugar');
+//const edad = 5
+//if (edad > 5 && edad < 16) {
+ //   console.log('El niño puede jugar');
 
-}else{
-    console.log('El niño no puede jugar :(');
+//}else{
+ //   console.log('El niño no puede jugar :(');
+//}
+
+//Control de flujo while, esto evalua en true hasta cuando encuentre un false no para
+let x = 0;
+while(x < 5) {
+    console.log(x);
+    x++
 }
+console.log('terminando el loop');
 
-//while
-console.log(hola);
+
 
 
 
