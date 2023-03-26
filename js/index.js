@@ -258,6 +258,12 @@ function callback(result) {
 }
 sumar(2, 3, callback)
 
+//FUNCIONES COMO VALORES
+
+//Las funciones ademas de cumplir con eñ objetivo de ejecutar porciones de codigo, cumplen con ser tambien valores(primitvos o variables)
+//Podemos pasar las funciones a otras funciones como argumentos y de esta manera componer comportamiento dentro de nuestro codigo.
+//Estoy componiendo funciones pequeñas para crear otras mas grandes
+
 
 
 
