@@ -234,14 +234,29 @@ while(x < 5) {
  //Todas las funciones le debemos indicar un valor de retorno(=return); si no lo hacemos nos devuelve undefined
  //Le podemos pasar valores primitivos o variables
 
+//function suma(a, b){
+  //  return a+b
+//}
+//const resultadoSuma1 = suma(2, 2) //4 valor primitivo
+//const resultadoSuma2 = suma(3, 5) //8
+//const resulatdoSuma3 = suma(resultadoSuma1, resultadoSuma2)// variable
+//console.log('resultado', resulatdoSuma3);
 
- function suma (a, b) {
-    return a+b
- }
-const resultadoSuma1 = suma(1, 2) //3
-const resultadoSuma2 = suma(3,5)  //8
-const resultadoSuma3 = suma(resultadoSuma1, resultadoSuma2) //Dentro de () tengo variables
-console.log('resultado', resultadoSuma3); //resultado, 11
+
+//Devoluciones de llamada= Callback(cb)
+//cb es una funcion que podemos ejecutar al final de una funcion
+
+function sumar (a, b, cb) {
+    const r = a + b
+    cb(r)
+
+
+}
+function callback(result) {
+    console.log('resultado', result);
+
+}
+sumar(2, 3, callback)
 
 
 
