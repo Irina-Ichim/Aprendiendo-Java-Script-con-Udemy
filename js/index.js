@@ -161,7 +161,42 @@ while(x < 5) {
     console.log(x);
     x++
 }
-console.log('terminando el loop');
+//console.log('terminando el loop');
+
+//Control de flujo Switch, evalua una funcion o otra funcion. El ultimo caso que recibe, siempre es un difault(lo que se ejecuta por defecto)
+//Los{} de los casos no son obligatorios
+//Se añade break
+//Switch depende de la variable que quieres que se ejecute.
+
+//let = 2;
+//switch (2) {
+   // case 1: {
+   //     console.log('yo soy caso 1');
+   //     break;
+  //  };
+  //  case 2: {
+  //      console.log('chanchito feliz');
+  //      break;
+  //  };
+  //  case 3:{
+  //      console.log('chanchito triste');
+  //      break;
+ //   };
+  //  default:
+  //      console.log('no hay chanchitos');
+  //      break;
+    
+//}
+//Control de flujo 'FOR', tiene 3 indicaciones: el valor inicial de nuestra variable, la condicion que debe cumplir nuestra variable, cual es la operacion que debe seguir cuando acabe nuestro loop
+
+
+for (let i = 0; i < 10; i++ ) {
+    console.log(i);
+
+}
+
+
+
 
 
 
