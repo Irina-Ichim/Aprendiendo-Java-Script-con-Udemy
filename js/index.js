@@ -283,6 +283,12 @@ const otraFaF = (a, b) => {
 const r = otraFaF(1, 2)
 console.log(r);
 
+//FUNCIONES ANONIMAS_funcion que no tiene nombre, se utiliza cuando esta ejecutada en otra funcion(tipo callbacks), no es muy recomendable utilizarla
+// La funcion anonima la debes aplicar cuando no uses esta misma funcion en otra parte de nuestro codigo
+sumar (2, 3, function (r) {
+  console.log('Soy una funcion anonima y mi resultado es', r);
+} )
+
 
 
 
