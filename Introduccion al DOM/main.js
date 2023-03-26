@@ -16,3 +16,12 @@ window.onload = () => {
     const parrafo = document.getElementById('text')
     console.log(parrafo.innerHTML);
 }
+
+//MANIPULAR TEXTO con inner. 
+//Podemos manipular el inner para que contenga un texto distinto(de manera dinamica)
+
+window.onload = () => {
+    const parrafo = document.getElementById('text')
+    parrafo.innerText = 'Texto Actualizado' //manipulo el inner dandole otro valor
+    console.log(parrafo.innerText);
+}
