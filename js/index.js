@@ -289,6 +289,12 @@ sumar (2, 3, function (r) {
   console.log('Soy una funcion anonima y mi resultado es', r);
 } )
 
+//INTRO A DOM
+//EL DOM es todo el arbol html una vez construido, la representacion que se vera plasmada dentro de nuestra web
+//El dom es nuestro html, propreidades, css, interfaz de programacion estandar (propriedades, metodos, eventos)
+//Estandar de como podemos ver, cambiar, agregar o eliminar elementos html dentro de nuestro web
+
+
 
 
 
