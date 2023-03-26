@@ -190,12 +190,23 @@ while(x < 5) {
 //Control de flujo 'FOR', tiene 3 indicaciones: el valor inicial de nuestra variable, la condicion que debe cumplir nuestra variable, cual es la operacion que debe seguir cuando acabe nuestro loop
 
 
-for (let i = 0; i < 10; i++ ) {
-    console.log(i);
+//for (let i = 0; i < 10; i++ ) {
+  //  console.log(i);
 
-}
+//}
 
+//Accediendo a los elementos de un array
+//Recuerda que cuando empiezas a contar un array empieza desde 0, recuerda usar []
+// Una de las propriedades de los array es length, esta propriedad nos permite obtener el largo de un arreglo, en mi ejemplo(5)
+//Si yo quiero acceder por ejemplo a mi elemnto numero 3, en console debo indicar(mi constante[elemento3])
 
+const numeros = [1, 2, 'Hola', 4, 5]
+for (let i = 0; i < numeros.length; i++ ) {
+     // console.log(i);
+    // console.log(numeros[2]);
+    console.log(numeros[i]);
+  
+  }
 
 
 
