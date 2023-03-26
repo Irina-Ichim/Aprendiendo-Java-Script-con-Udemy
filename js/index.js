@@ -73,10 +73,10 @@ arrVacio.push(miPrimeraVariable);
 
 //Operaciones matematicas en js
 
-const suma = 2 + 1
-const resta = 5 - 3
-const multiplicar = 2 * 3
-const dividir = 6 / 2
+//const suma = 2 + 1
+//const resta = 5 - 3
+//const multiplicar = 2 * 3
+//const dividir = 6 / 2
 
 //console.log ( suma, resta, multiplicar, dividir,);
 
@@ -218,17 +218,31 @@ while(x < 5) {
   //Cuando definimos una funcion, dentro de los parantesis se llaman argumentos
   //Cuando llamamos una funcion, lo que se encuentra dentro de las parantesis son parametros
 
-  function iterar(arg1) {
-    for (let i = 0; i < arg1.length; i++ ) {
-    console.log(arg1[i]);
+  //function iterar(arg1) {
+  //  for (let i = 0; i < arg1.length; i++ ) {
+  //  console.log(arg1[i]);
   
-  }
+ // }
 
-  }
-  const numeros = [1, 2, 'Hola', 4, 5]
-  const nombres = ['Irina', 'Karina', 'Chanchito feliz', 'Chanchito triste']
-  iterar(numeros)
-  iterar(nombres)
+//  }
+ // const numeros = [1, 2, 'Hola', 4, 5]
+ // const nombres = ['Irina', 'Karina', 'Chanchito feliz', 'Chanchito triste']
+ // iterar(numeros)
+ // iterar(nombres)
+
+ //MAS FUNCIONES
+ //Todas las funciones le debemos indicar un valor de retorno(=return); si no lo hacemos nos devuelve undefined
+ //Le podemos pasar valores primitivos o variables
+
+
+ function suma (a, b) {
+    return a+b
+ }
+const resultadoSuma1 = suma(1, 2) //3
+const resultadoSuma2 = suma(3,5)  //8
+const resultadoSuma3 = suma(resultadoSuma1, resultadoSuma2) //Dentro de () tengo variables
+console.log('resultado', resultadoSuma3); //resultado, 11
+
 
 
 
