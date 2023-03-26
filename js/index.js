@@ -199,14 +199,36 @@ while(x < 5) {
 //Recuerda que cuando empiezas a contar un array empieza desde 0, recuerda usar []
 // Una de las propriedades de los array es length, esta propriedad nos permite obtener el largo de un arreglo, en mi ejemplo(5)
 //Si yo quiero acceder por ejemplo a mi elemnto numero 3, en console debo indicar(mi constante[elemento3])
+//Recuerda mirar las propriedades de los array. hay varias!
 
-const numeros = [1, 2, 'Hola', 4, 5]
-for (let i = 0; i < numeros.length; i++ ) {
+//const numeros = [1, 2, 'Hola', 4, 5]
+//for (let i = 0; i < numeros.length; i++ ) {
      // console.log(i);
     // console.log(numeros[2]);
-    console.log(numeros[i]);
+   // console.log(numeros[i]);
+  
+  //}
+
+  //FUNCIONES
+  //Para reutilizar codigos que hemos escrito , utilizamos funciones
+  //Se escribe con la palabra function, seguido de la instruction que le queremos dar,()le damos los argumentos
+  //Tengo que aprender a identar mi codigo= escribir de forma correcta, el codigo debe estar un espacio hacia la derecha dentro de la funcion
+  //Para llamar la funcion la escribes directamente seguido de (), despues de acabar el codigo de la funcion
+  //Los argumentos permiten modificar de manera dinamica lo que se encuentra dentro de la funcion
+  //Cuando definimos una funcion, dentro de los parantesis se llaman argumentos
+  //Cuando llamamos una funcion, lo que se encuentra dentro de las parantesis son parametros
+
+  function iterar(arg1) {
+    for (let i = 0; i < arg1.length; i++ ) {
+    console.log(arg1[i]);
   
   }
+
+  }
+  const numeros = [1, 2, 'Hola', 4, 5]
+  const nombres = ['Irina', 'Karina', 'Chanchito feliz', 'Chanchito triste']
+  iterar(numeros)
+  iterar(nombres)
 
 
 
