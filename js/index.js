@@ -256,13 +256,35 @@ function callback(result) {
     console.log('resultado', result);
 
 }
-sumar(2, 3, callback)
+//sumar(2, 3, callback)
 
 //FUNCIONES COMO VALORES
 
 //Las funciones ademas de cumplir con eñ objetivo de ejecutar porciones de codigo, cumplen con ser tambien valores(primitvos o variables)
 //Podemos pasar las funciones a otras funciones como argumentos y de esta manera componer comportamiento dentro de nuestro codigo.
 //Estoy componiendo funciones pequeñas para crear otras mas grandes
+
+//Funciones de flecha
+//Tiene 2 beneficios: a)no se utiliza la palabra reservada function b) con tan solo una linea no es necesario colocar return, ya que esto es implicito
+//Le agregamos => seguido de la logica que le quiero ejecutar(a+b)
+//return implcito cuando tiene una sola linea
+
+
+//const miFatArrowFunction = (a, b) => a + b
+//const r = miFatArrowFunction(1, 2)
+//console.log(r)
+
+//Otra forma de escribir los arrowfunction
+
+const miFatArrowFunction = (a, b) => a + b
+const otraFaF = (a, b) => {
+ return a + b
+}
+const r = otraFaF(1, 2)
+console.log(r);
+
+
+
 
 
 
