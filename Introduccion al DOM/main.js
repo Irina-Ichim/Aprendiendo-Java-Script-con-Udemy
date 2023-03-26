@@ -25,3 +25,13 @@ window.onload = () => {
     parrafo.innerText = 'Texto Actualizado' //manipulo el inner dandole otro valor
     console.log(parrafo.innerText);
 }
+
+//AGREGANDO HTML A OTRO ELEMENTO HTML
+//Las veces que necesito agregar mas nodos a mi arbol HTML, uso innerHTML, mira el ejemplo
+
+window.onload = () => {
+    const parrafo = document.getElementById('text')
+    parrafo.innerHTML = '<li>Irina</li><li>Karina</li>'
+    console.log(parrafo.innerText)
+    
+}
